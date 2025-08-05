@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Catch Me If You Can't</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="title-screen">
+    <h1>Catch Me If You Can't</h1>
+    <p class="credit">Made by Muhammad Haris</p>
+    <button id="start-button">Start Game</button>
+  </div>
+
+  <div id="level-select" class="hidden">
+  <h2>Select a Level</h2>
+  <div id="levels"></div>
+</div>
+
+  <div id="game-screen" class="hidden">
+    <h2 id="level-title"></h2>
+    <p id="hint-text" class="hint"></p>
+    <div id="game-area"></div>
+    <button id="back-button">Back to Menu</button>
+  </div>
+
+  <audio id="success-sound" src=""></audio>
+  <audio id="fail-sound" src=""></audio>
+
+  <script src="game.js"></script>
+  <div id="game-win" class="hidden fade-in">
+  <h2>🎉 You Won the Game! 🎉</h2>
+  <button onclick="goToMainMenu()">Back to Main Menu</button>
+</div>
+</body>
+</html>
